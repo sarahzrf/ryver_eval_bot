@@ -13,9 +13,6 @@ def main(port)
       sock.close
     end
   end
-  while code = gets("\0")
-    result = binding.eval(code)
-  end
 end
 
 main(ARGV[0].to_i)
